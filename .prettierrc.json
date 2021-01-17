@@ -1,0 +1,7 @@
+{
+  "sami": false,
+  "arrowParens": "always",
+  "singleQuote": true,
+  "print-width": 200,
+  "use-tabs": 2
+}
