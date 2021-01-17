@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import reg from './routes/reg.routes.js';
 import login from './routes/login.routes.js';
 import verify from './routes/verify.routes.js';
+import panel from './routes/panel.routes.js';
 
 dotenv.config();
 const app = express();
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api', reg);
 app.use('/api', login);
 app.use('/api', verify);
+app.use('/api', panel);
 
 app.listen(process.env.PORT, () => {
   console.log(`server is run port: ${process.env.PORT}`);
