@@ -14,6 +14,7 @@ export default async (req, res) => {
       status: 'ok',
       payload: {
         obj,
+        user: req.user,
       },
     });
   } catch (err) {

@@ -24,7 +24,7 @@ app.use('/api', reg);
 app.use('/api', login);
 app.use('/api', verify);
 app.use('/api', panel);
-
-app.listen(process.env.PORT, () => {
-  console.log(`server is run port: ${process.env.PORT}`);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`server is run port: ${port}`);
 });
